@@ -18,13 +18,12 @@ def gcd(a, b):
 
 
 def compareTo(s1, s2):
-    # pos = 0
     if s1[0] < s2[0]:
         return -1
     elif s1[0] > s2[0]:
         return 1
     else:
-        if not s1 or s2:
+        if not s1 or not s2:
             return 0
         return compareTo(s1.pop(), s2.pop())
 
